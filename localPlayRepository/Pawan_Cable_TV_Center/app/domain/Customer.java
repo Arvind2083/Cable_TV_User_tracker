@@ -12,6 +12,9 @@ import java.util.concurrent.CopyOnWriteArrayList;
  */
 public class Customer{
 
+	/**
+	 * 
+	 */
 	public String customerName;
 	public int customerId;
 	public boolean billPayed;
