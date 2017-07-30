@@ -1,0 +1,16 @@
+@(customerDetails:List[domain.Customer])
+
+<html>
+<head>
+</head>
+<body>
+   <form method="get" action="/create">
+   @for(customer <- customerDetails){
+     customerId :<a href="@routes.HomeController.showCustomer(customer.customerId)">@customer.customerId </a>
+    <p> customerName: @customer.customerName </p>
+    <p> Bill Status: @customer.billPayed </p>
+   }
+ <button type="submit" name = "Add Customer" value="Add Customer"></button>  
+ </form>
+</body>
+</html>

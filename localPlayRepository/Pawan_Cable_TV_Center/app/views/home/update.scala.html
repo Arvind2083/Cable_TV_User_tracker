@@ -1,0 +1,17 @@
+@(customerForm: Form[domain.Customer])
+@import helper._
+
+<html>
+<head>
+</head>
+<body>
+<h1>Edit Customer</h1>
+	@helper.form(action=routes.HomeController.updateData()){
+		@helper.inputText(customerForm("customerId"))
+		@helper.inputText(customerForm("customerName"))
+		@helper.checkbox(customerForm("billPayed"))
+		<button type="submit" value="Edit Customer"></button>
+	}
+   
+</body>
+</html>

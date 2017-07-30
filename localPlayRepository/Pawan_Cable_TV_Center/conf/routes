@@ -1,0 +1,7 @@
+GET     /                        controllers.HomeController.showAll()
+GET     /show/:customerId        controllers.HomeController.showCustomer(customerId: Int)
+GET     /delete/:customerId      controllers.HomeController.delete(customerId: Int)
+GET     /update/:customerId      controllers.HomeController.update(customerId: Int)
+POST    /save                    controllers.HomeController.save()
+POST    /saveUpdate              controllers.HomeController.updateData()
+GET     /create                  controllers.HomeController.createCustomer()

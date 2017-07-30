@@ -1,0 +1,15 @@
+@(customer:domain.Customer)
+@import helper._
+<html>
+<head>
+</head>
+<body>
+    <form method="get">
+    <h1>customerId :@customer.customerId </h1>
+    <p> customerName:@customer.customerName </p>
+    <p> Bill Status: @customer.billPayed </p>
+    <input type="submit" value="Delete" formaction="/delete/@customer.customerId">
+    <input type="submit" value="Update" formaction="/update/@customer.customerId">
+    </form>
+</body>
+</html>
